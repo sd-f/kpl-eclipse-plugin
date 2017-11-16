@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="kpl.editor"
+         name="KPL Editor"
+         point="org.eclipse.ui.editors">
+      <editor
+            name="KPL Editor"
+            extensions="k,h"
+            icon="icons/flash.png"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="foundation.softwaredesign.kpl.editors.KPLEditor"
+            id="foundation.softwaredesign.kpl.editors.KPLEditor">
+      </editor>
+   </extension>
+   
+   <!-- TODO
+   <extension point="org.eclipse.core.runtime.adapters">
+    <factory
+      adaptableType="foundation.softwaredesign.kpl.editors.KPLEditor"
+      class="foundation.softwaredesign.KPLEditorToOutlineAdapterFactory">
+      <adapter type="org.eclipse.ui.views.contentoutline.IContentOutlinePage"/>
+    </factory>
+  </extension>
+  -->
+</plugin>
